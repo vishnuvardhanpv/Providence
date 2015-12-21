@@ -18,6 +18,8 @@
 }
 
 @property (nonatomic, weak) IBOutlet UIView *mainContainerView;
+@property (nonatomic, weak) IBOutlet UITextField *textField;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *textFieldContainerViewBottomConstraint;
 @property (nonatomic,assign) CGRect openFrame;
 @property (nonatomic,assign) CGRect closeFrame;
 

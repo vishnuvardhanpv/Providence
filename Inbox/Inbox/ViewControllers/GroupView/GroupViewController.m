@@ -11,7 +11,7 @@
 #import "Friend.h"
 #import "Utilities.h"
 
-NSString *const GroupCellIdentifier = @"GroupCellIdentifier";
+NSString *const GroupCellId = @"GroupCellId";
 
 @implementation GroupViewController
 
@@ -34,7 +34,7 @@ NSString *const GroupCellIdentifier = @"GroupCellIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:GroupCellIdentifier forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:GroupCellId forIndexPath:indexPath];
     Friend *friendObj = [self.groupObj.members objectAtIndex:indexPath.row];
     UIImageView *imageView = [cell viewWithTag:1];
     [Utilities makeCircularImageView:imageView];
